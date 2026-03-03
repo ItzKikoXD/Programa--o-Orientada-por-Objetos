@@ -1,36 +1,44 @@
 #include <iostream>
 using namespace std;
 
- int main() {
+int main() {
     float num1;
     float num2;
+    float conta;
     char operacao;
-    int conta;
-    cout << "Escreva o primeira numero: ";
+
+    cout << "Escreva o primeiro numero: ";
     cin >> num1;
+
     cout << "Escreva o segundo numero: ";
     cin >> num2;
-cout << "Escreva a operaçao (+,-,*ou /): ";
+
+    cout << "Escreva a operacao (+, -, * ou /): ";
     cin >> operacao;
 
-    switch(operacao){
-        case operacao:
-        conta= num1 + num2;
-        break;
-        case operacao:
-        if (num1>num2){
-        conta=num1 - num2;
-        }
-        else{
-            conta=num2-num1;
-        }
-        break;
-        case operacao:
-        conta=num2*num1;
-        break;
-        case operacao:{
-            conta=num2/num1;
-        }
+    switch(operacao)
+    {
+        case '+':
+            conta = num1 + num2;
+            break;
+
+        case '-':
+            conta = num1 - num2;
+            break;
+
+        case '*':
+            conta = num1 * num2;
+            break;
+
+        case '/':
+                conta = num1 / num2;
+
+        default:
+            cout << "Operacao invalida" ;
+            return 1;
     }
+
+    cout << "Resultado: " << conta;
+
     return 0;
 }
