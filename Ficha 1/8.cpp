@@ -40,11 +40,13 @@ int main() {
             desconto = 5;
             break;
         default:
-            cout << "Operacao invalida" ;
+            cout << "Escolha invalida" ;
             return 1;
     }
 
-    cout << "Desconto = % " << desconto;
+    cout << "Desconto =  " << desconto << "%\n";
+    
+    cout << "Clique qualquer tecla para continuar";
 
     return 0;
 }
